@@ -66,7 +66,35 @@ In order to reveal the functionality of each component of the proposed method, 3
 |<audio controls><source src="./static/Ref/20_0203049004.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/Tgt/20_0203049004.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/Proposed/20_0203049004.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/wo_gse_style/20_0203049004.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/wo_chunk/20_0203049004.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/wo_sac/20_0203049004.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
 |<audio controls><source src="./static/Ref/20_0203050001.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/Tgt/20_0203050001.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/Proposed/20_0203050001.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/wo_gse_style/20_0203050001.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/wo_chunk/20_0203050001.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/wo_sac/20_0203050001.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
 
+## Automatic audiobook generation
+
+Based on the proposed cross-speaker reading style transfer model, an automatic audiobook generation system is constructed by incorporating a RNN-based text analysis model, which predicts the LPE and genre according to the BERT token embedding of phoneme embedding sequence of the given book content (similar to [2,3]).
+The predicted LPE and genre is generalizable to different speakers in the corpus, regardless of whether the genre of the given book content is included in the training data of the speaker.
+According to the predicted genre label and the identity of the desired speaker, the GSE vectors on each branch could be obtained by choosing the averaged GSE vectors over the training data of the target genre/speaker. Together with the predicted LPE and text sequence, the speeches of the target speaker reading the material with the predicted style is eventually generated. 
+
+The inference results of the audiobook generation system on **out-of-set data** are provided here, including both the speakers whose training data have seen the genre of given script (**Seen**), and the speakers whose training data have not (**Unseen**).
+
+### Fairy tales
+
+| Script | Speaker 02 (Seen) | Speaker 22 (Unseen) |
+|:------------|:------------|:------------|
+|一天，小猴子在路上捡到了一页书，上面有好多字，它就把这页书带回家。|<audio controls><source src="./static/outofset/ft_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_unseen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|从牛伯伯家经过时，看到牛伯伯正在挖土坑。小猴子甜甜地叫一声：“牛伯伯，你挖土坑干什么？”|<audio controls><source src="./static/outofset/ft_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_unseen_23.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|牛伯伯说：“我要把这篮子里的水果种下去。等果子发芽，大树长成，动物们就有更多的果子吃了。”|<audio controls><source src="./static/outofset/ft_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_unseen_45.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|小猴子也在自己家门前挖了一个土坑，把那一页书的字全都种到土坑里去。他觉得：只要这些字发芽，大树长成，动物们就有看不完的书。|<audio controls><source src="./static/outofset/ft_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_unseen_67.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+
+### Martial arts fiction
+
+
+| Script | Speaker 04 (Seen) | Speaker 01 (Unseen) |
+|:------------|:------------|:------------|
+|琴音似止未止之际，却有一二下极低极细的箫声在琴音旁响了起来。|<audio controls><source src="./static/outofset/maf_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_unseen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|回旋婉转，箫声渐响，恰似吹箫人一面吹，一面慢慢走近。|<audio controls><source src="./static/outofset/maf_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_unseen_23.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|箫声清丽，忽高忽低，忽轻忽响，低到极处之际，几个盘旋之后，又再低沉下去，虽极低极细，每个音节仍清晰可闻。|<audio controls><source src="./static/outofset/maf_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_unseen_45.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|渐渐低音中偶有珠玉跳跃，清脆短促，此伏彼起，繁音渐增；先如鸣泉飞溅，继而如群卉争艳，花团锦簇。|<audio controls><source src="./static/outofset/maf_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_unseen_67.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+
 
 ## References
-1. Q. Xie, X. Tian, G. Liu, K. Song, L. Xie, Z. Wu, H. Li, S. Shi, H. Li, F. Hong, H. Bu, and X. Xu, “The multi-speaker multi-style voice cloning challenge 2021,” in ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2021, pp.8613–8617.
+1. Q. Xie, X. Tian, G. Liu, K. Song, L. Xie, Z. Wu, H. Li, S. Shi, H. Li, F. Hong, H. Bu, and X. Xu, “The multi-speaker multi-style voice cloning challenge 2021,” in ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2021, pp.8613–8617.
 2. Q. Xie, T. Li, X. Wang, Z. Wang, L. Xie, G. Yu, and G. Wan, “Multi-speaker multi-style text-to-speech synthesis with single- speaker single-style training data scenarios,” _arXiv preprint arXiv:2112.12743_, 2021.
+3. Z. Hodari, A. Moinet, S. Karlapati, J. Lorenzo-Trueba, T. Mer- ritt, A. Joly, A. Abbas, P. Karanasou, and T. Drugman, “Camp: a two-stage approach to modelling prosody in context,” in ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2021, pp. 6578–6582
