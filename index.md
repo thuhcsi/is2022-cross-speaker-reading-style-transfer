@@ -78,20 +78,20 @@ The inference results of the audiobook generation system on **out-of-set data** 
 
 | Script | Speaker 02 (Seen) | Speaker 22 (Unseen) |
 |:------------|:------------|:------------|
-|一天，小猴子在路上捡到了一页书，上面有好多字，它就把这页书带回家。|<audio controls><source src="./static/outofset/ft_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_unseen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
-|从牛伯伯家经过时，看到牛伯伯正在挖土坑。小猴子甜甜地叫一声：“牛伯伯，你挖土坑干什么？”|<audio controls><source src="./static/outofset/ft_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_unseen_23.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
-|牛伯伯说：“我要把这篮子里的水果种下去。等果子发芽，大树长成，动物们就有更多的果子吃了。”|<audio controls><source src="./static/outofset/ft_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_unseen_45.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
-|小猴子也在自己家门前挖了一个土坑，把那一页书的字全都种到土坑里去。他觉得：只要这些字发芽，大树长成，动物们就有看不完的书。|<audio controls><source src="./static/outofset/ft_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_unseen_67.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|一天，小猴子在路上捡到了一页书，上面有好多字，它就把这页书带回家。|<audio controls><source src="./static/outofset/ft_spk_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_spk_unseen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|从牛伯伯家经过时，看到牛伯伯正在挖土坑。小猴子甜甜地叫一声：“牛伯伯，你挖土坑干什么？”|<audio controls><source src="./static/outofset/ft_spk_seen_23.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_spk_unseen_23.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|牛伯伯说：“我要把这篮子里的水果种下去。等果子发芽，大树长成，动物们就有更多的果子吃了。”|<audio controls><source src="./static/outofset/ft_spk_seen_45.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_spk_unseen_45.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|小猴子也在自己家门前挖了一个土坑，把那一页书的字全都种到土坑里去。他觉得：只要这些字发芽，大树长成，动物们就有看不完的书。|<audio controls><source src="./static/outofset/ft_spk_seen_67.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/ft_spk_unseen_67.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
 
 ### Martial arts fiction
 
 
 | Script | Speaker 04 (Seen) | Speaker 01 (Unseen) |
 |:------------|:------------|:------------|
-|琴音似止未止之际，却有一二下极低极细的箫声在琴音旁响了起来。|<audio controls><source src="./static/outofset/maf_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_unseen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
-|回旋婉转，箫声渐响，恰似吹箫人一面吹，一面慢慢走近。|<audio controls><source src="./static/outofset/maf_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_unseen_23.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
-|箫声清丽，忽高忽低，忽轻忽响，低到极处之际，几个盘旋之后，又再低沉下去，虽极低极细，每个音节仍清晰可闻。|<audio controls><source src="./static/outofset/maf_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_unseen_45.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
-|渐渐低音中偶有珠玉跳跃，清脆短促，此伏彼起，繁音渐增；先如鸣泉飞溅，继而如群卉争艳，花团锦簇。|<audio controls><source src="./static/outofset/maf_seen_01.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_unseen_67.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|琴音似止未止之际，却有一二下极低极细的箫声在琴音旁响了起来。|<audio controls><source src="./static/outofset/maf_spk_seen_0.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_spk_unseen_0.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|回旋婉转，箫声渐响，恰似吹箫人一面吹，一面慢慢走近。|<audio controls><source src="./static/outofset/maf_spk_seen_1.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_spk_unseen_1.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|箫声清丽，忽高忽低，忽轻忽响，低到极处之际，几个盘旋之后，又再低沉下去，虽极低极细，每个音节仍清晰可闻。|<audio controls><source src="./static/outofset/maf_spk_seen_2.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_spk_unseen_2.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
+|渐渐低音中偶有珠玉跳跃，清脆短促，此伏彼起，繁音渐增；先如鸣泉飞溅，继而如群卉争艳，花团锦簇。|<audio controls><source src="./static/outofset/maf_spk_seen_3.wav" type="audio/wav">Your browser does not support the audio element.</audio>|<audio controls><source src="./static/outofset/maf_spk_unseen_3.wav" type="audio/wav">Your browser does not support the audio element.</audio>|
 
 
 ## References
